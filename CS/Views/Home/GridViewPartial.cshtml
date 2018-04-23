@@ -1,0 +1,15 @@
+@model List<Example.Models.MyObject>
+@Html.DevExpress().GridView(settings => {
+    settings.Name = "grid";
+    settings.CallbackRouteValues = new { Controller = "Home", Action = "GridViewPartial" };
+    settings.KeyFieldName = "ID";
+    
+    settings.CommandColumn.Visible = true;
+    settings.CommandColumn.ShowSelectCheckbox = true;
+    
+    settings.Columns.Add("ID");
+    settings.Columns.Add("Name");
+
+    settings.SettingsBehavior.AllowSelectSingleRowOnly = true;
+    settings.SettingsBehavior.AllowSelectByRowClick = true;    
+}).Bind(Model).GetHtml()

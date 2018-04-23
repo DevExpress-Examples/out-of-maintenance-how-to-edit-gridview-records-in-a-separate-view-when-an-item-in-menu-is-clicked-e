@@ -1,0 +1,13 @@
+@{
+    ViewBag.Title = "Home Page";
+}
+@model List<Example.Models.MyObject>
+
+@Html.DevExpress().Menu(settings => {
+    settings.Name = "menu";
+    settings.Items.Add("Edit", "edt");
+
+    settings.ClientSideEvents.ItemClick = "OnItemClick";
+}).GetHtml()
+
+@Html.Partial("GridViewPartial", Model)
