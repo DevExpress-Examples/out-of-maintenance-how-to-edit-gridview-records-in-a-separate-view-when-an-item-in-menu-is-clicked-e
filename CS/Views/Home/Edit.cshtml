@@ -1,0 +1,21 @@
+﻿@model Example.Models.MyObject
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>
+    Edit</h2>
+@using (Html.BeginForm("Edit", "Home")) {
+    <input type="hidden" name="ID" value='@Model.ID' />
+    <text>Name: </text>
+    @Html.DevExpress().TextBox(settings => {
+    settings.Name = "Name";
+    settings.Width = 170;
+}).Bind(Model, "Name").GetHtml()
+    
+    @Html.DevExpress().Button(settings => {
+    settings.Name = "btn";
+    settings.UseSubmitBehavior = true;
+    settings.Text = "Submit changes";
+}).GetHtml()
+}
