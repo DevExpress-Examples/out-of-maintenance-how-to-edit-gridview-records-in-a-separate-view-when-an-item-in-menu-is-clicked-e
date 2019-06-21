@@ -11,6 +11,9 @@
 * [_Layout.cshtml](./CS/Views/Shared/_Layout.cshtml)
 <!-- default file list end -->
 # How to edit GridView records in a separate View when an item in Menu is clicked
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/e3609)**
+<!-- run online end -->
 
 
 <p>The example uses an external Form that edits records displayed by the GridView extension. When a user selects a record, it is possible to retrieve keys from a visible page using the <a href="http://documentation.devexpress.com/#AspNet/DevExpressWebASPxGridViewScriptsASPxClientGridView_GetSelectedKeysOnPagetopic"><u>ASPxClientGridView.GetSelectedKeysOnPage</u></a> method.<br />
