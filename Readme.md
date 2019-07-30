@@ -12,7 +12,7 @@
 <!-- default file list end -->
 # How to edit GridView records in a separate View when an item in Menu is clicked
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/e3609)**
+**[[Run Online]](https://codecentral.devexpress.com/e3609/)**
 <!-- run online end -->
 
 
